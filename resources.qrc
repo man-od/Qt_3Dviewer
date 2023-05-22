@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/3DViewer_icon.png</file>
+    </qresource>
+</RCC>

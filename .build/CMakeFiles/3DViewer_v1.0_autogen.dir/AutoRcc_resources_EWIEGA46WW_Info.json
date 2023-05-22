@@ -1,0 +1,22 @@
+{
+	"BUILD_DIR" : "/Users/armorcoo/Desktop/archive/Qt_3Dviewer/.build/3DViewer_v1.0_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/armorcoo/Desktop/archive/Qt_3Dviewer/.build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/armorcoo/Desktop/archive/Qt_3Dviewer/.build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/armorcoo/Desktop/archive/Qt_3Dviewer",
+	"CMAKE_SOURCE_DIR" : "/Users/armorcoo/Desktop/archive/Qt_3Dviewer",
+	"INCLUDE_DIR" : "/Users/armorcoo/Desktop/archive/Qt_3Dviewer/.build/3DViewer_v1.0_autogen/include",
+	"INPUTS" : 
+	[
+		"/Users/armorcoo/Desktop/archive/Qt_3Dviewer/images/3DViewer_icon.png"
+	],
+	"LOCK_FILE" : "/Users/armorcoo/Desktop/archive/Qt_3Dviewer/.build/CMakeFiles/3DViewer_v1.0_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/usr/local/share/qt/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/Users/armorcoo/Desktop/archive/Qt_3Dviewer/.build/CMakeFiles/3DViewer_v1.0_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/Users/armorcoo/Desktop/archive/Qt_3Dviewer/resources.qrc",
+	"VERBOSITY" : 0
+}

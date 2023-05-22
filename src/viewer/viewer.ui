@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Viewer</class>
+ <widget class="QMainWindow" name="Viewer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1299</width>
+    <height>725</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Viewer</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="7,3">
+    <item>
+     <widget class="ObjLoader" name="objWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>774</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="grid_layout">
+      <item row="1" column="0" rowspan="3">
+       <widget class="QLabel" name="label_17">
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Инфо:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="5">
+       <widget class="QPushButton" name="pushButton_openObj">
+        <property name="text">
+         <string>Выбрать файл</string>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="1" colspan="2">
+       <widget class="QSlider" name="rotate_z">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="20" column="1" colspan="2">
+       <widget class="QSlider" name="LineWidth_Slider">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="25" column="0" colspan="5">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="bg_color">
+          <property name="text">
+           <string>Фон</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="vertex_color">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Вершина</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="line_color">
+          <property name="text">
+           <string>  Ребро  </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="reset">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(20, 99, 224);
+border-radius: 15%;
+padding: 3px;
+</string>
+          </property>
+          <property name="text">
+           <string>Сброс</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="20" column="4">
+       <widget class="QSpinBox" name="LineWidth_SpinBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="23" column="0" colspan="5">
+       <widget class="Line" name="line_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QPushButton" name="gif_button">
+        <property name="maximumSize">
+         <size>
+          <width>130</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Создание GIF</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="0" colspan="5" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_6">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>21</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">text-align: center;</string>
+        </property>
+        <property name="text">
+         <string>ВРАЩЕНИЕ</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="4">
+       <widget class="QSpinBox" name="rotate_spinBox_X">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1" colspan="2">
+       <widget class="QSpinBox" name="moveSpinBox_Z">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="21" column="1" colspan="4">
+       <widget class="QComboBox" name="switch_type_vertex">
+        <item>
+         <property name="text">
+          <string>Отсутствует</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Квадратная</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Круглая</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="15" column="4">
+       <widget class="QSpinBox" name="rotate_spinBox_Y">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0" alignment="Qt::AlignRight">
+       <widget class="QLabel" name="label_15">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>21</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Y</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Тип проекции:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0" colspan="5" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_11">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>21</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">text-align: center;</string>
+        </property>
+        <property name="text">
+         <string>ПЕРЕМЕЩЕНИЕ</string>
+        </property>
+       </widget>
+      </item>
+      <item row="18" column="0" colspan="5">
+       <widget class="Line" name="line_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0" alignment="Qt::AlignRight">
+       <widget class="QLabel" name="label_7">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>21</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>X</string>
+        </property>
+       </widget>
+      </item>
+      <item row="21" column="0">
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>Тип вершины</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1" colspan="2">
+       <widget class="QSpinBox" name="moveSpinBox_Y">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="0" alignment="Qt::AlignRight">
+       <widget class="QLabel" name="label_5">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>21</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Z</string>
+        </property>
+       </widget>
+      </item>
+      <item row="22" column="4">
+       <widget class="QSpinBox" name="vertexSize_SpinBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="22" column="1" colspan="2">
+       <widget class="QSlider" name="vertexSize_Slider">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" colspan="4">
+       <widget class="QLabel" name="label_facets_am">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Количество ребер: </string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0" alignment="Qt::AlignRight">
+       <widget class="QLabel" name="label_16">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>21</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Z</string>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="4">
+       <widget class="QSpinBox" name="rotate_spinBox_Z">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>25</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="0" alignment="Qt::AlignRight">
+       <widget class="QLabel" name="label_4">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>21</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string> Y</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="4">
+       <widget class="QLabel" name="label_file_name">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Название файла: </string>
+        </property>
+       </widget>
+      </item>
+      <item row="24" column="0" colspan="5" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_12">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>21</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">text-align: center;</string>
+        </property>
+        <property name="text">
+         <string>Цвет</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" colspan="4">
+       <widget class="QLabel" name="label_vertex_am">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Количество вершин: </string>
+        </property>
+       </widget>
+      </item>
+      <item row="19" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Тип линии</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="1" colspan="2">
+       <widget class="QSlider" name="rotate_x">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1" colspan="4">
+       <widget class="QComboBox" name="switch_projection">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <item>
+         <property name="text">
+          <string>Параллельная</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Центральная проекция</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="20" column="0">
+       <widget class="QLabel" name="label_10">
+        <property name="text">
+         <string>Размер</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0" colspan="5">
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="0" alignment="Qt::AlignRight">
+       <widget class="QLabel" name="label_14">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>21</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>X</string>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="1" colspan="2">
+       <widget class="QSlider" name="rotate_y">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="19" column="1" colspan="4">
+       <widget class="QComboBox" name="switch_line_type">
+        <item>
+         <property name="text">
+          <string>Cплошная</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Пунктирная</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="22" column="0">
+       <widget class="QLabel" name="label_18">
+        <property name="text">
+         <string>Размер</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QPushButton" name="screen_button">
+        <property name="maximumSize">
+         <size>
+          <width>130</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Снимок экрана</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0" colspan="5">
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2" alignment="Qt::AlignRight">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Масштаб</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1" colspan="2">
+       <widget class="QSpinBox" name="moveSpinBox_X">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="4">
+       <widget class="QDoubleSpinBox" name="zoom_SpinBox"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ObjLoader</class>
+   <extends>QOpenGLWidget</extends>
+   <header>src/libobj/obj_loader.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
