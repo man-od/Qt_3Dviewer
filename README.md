@@ -16,14 +16,14 @@ A program for visualization of 3D wireframe models has been developed.:
     - Rotate the model by a given angle relative to its X, Y, Z axes.
     - Scale the model by a given value.
 
-## Part 2. Bonus. Settings
+## Settings
 
 - The program must allow customizing the type of projection (parallel and central)
 - The program must allow setting up the type (solid, dashed), color and thickness of the edges, display method (none, circle, square), color and size of the vertices
 - The program must allow choosing the background color
 - Settings must be saved between program restarts
 
-## Part 3. Bonus. Record
+## Record
 
 - The program must allow saving the captured (rendered) images as bmp and jpeg files.
 - The program must allow recording small screencasts by a special button - the current custom affine transformation of the loaded object into gif-animation (640x480, 10fps, 5s)
