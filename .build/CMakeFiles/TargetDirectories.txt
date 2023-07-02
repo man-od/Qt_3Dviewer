@@ -1,4 +1,0 @@
-/Users/armorcoo/Desktop/archive/Qt_3Dviewer/.build/CMakeFiles/3DViewer_v1.0.dir
-/Users/armorcoo/Desktop/archive/Qt_3Dviewer/.build/CMakeFiles/edit_cache.dir
-/Users/armorcoo/Desktop/archive/Qt_3Dviewer/.build/CMakeFiles/rebuild_cache.dir
-/Users/armorcoo/Desktop/archive/Qt_3Dviewer/.build/CMakeFiles/3DViewer_v1.0_autogen.dir

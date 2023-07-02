@@ -1,6 +1,8 @@
 # Qt_3Dviewer
 In this project, a program for viewing 3D wireframe models (3D Viewer) in the C programming language is implemented. The models themselves must be loaded from .obj files and displayed on the screen with the ability to rotate, scale and move.
 
+![Qt_3Dviewer](./images/screen.png)
+
 A program for visualization of 3D wireframe models has been developed.:
 
 - The program must be developed in C language of C11 standard using gcc compiler. You can use any additional QT libraries and modules
