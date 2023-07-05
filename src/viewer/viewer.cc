@@ -11,7 +11,7 @@
 Viewer::Viewer(QWidget *parent)
     : QMainWindow(parent),
       ui(new Ui::Viewer),
-      settings("School21", "3DViewer_v1.0") {
+      settings("3DViewer_v1.0") {
   ui->setupUi(this);
   set_viewer_colors();
   init_viewer();
