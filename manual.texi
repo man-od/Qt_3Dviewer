@@ -11,7 +11,7 @@ Copyright © 2023 by winfordt-armorcoo-parasits
 @title Небольшая инструкция по использованию 3DViewer
 @vskip
 @insertcopying
-@author Нияз Хазигалеев, Дастан Османалиев, Ирина Макарова
+@author anonymouse
 @end titlepage
 
 @ifnottex
